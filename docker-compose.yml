@@ -1,18 +1,28 @@
+# Define the version of Docker Compose syntax
 version: '3.8'
 
+# Define the services (containers) that will be managed
 services:
+  # Service 1: User Service
   user-service:
+    # Build the Docker image from the Dockerfile located in ./user-service directory
     build: ./user-service
+    # Map port 5001 of the container to port 5001 on the host machine
     ports:
       - "5001:5001"
 
+  # Service 2: Product Service
   product-service:
+    # Build the Docker image from the Dockerfile located in ./product-service directory
     build: ./product-service
+    # Map port 5002 of the container to port 5002 on the host machine
     ports:
       - "5002:5002"
 
+  # Service 3: Order Service
   order-service:
+    # Build the Docker image from the Dockerfile located in ./order-service directory
     build: ./order-service
+    # Map port 5003 of the container to port 5003 on the host machine
     ports:
       - "5003:5003"
-
