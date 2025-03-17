@@ -30,7 +30,7 @@ microservices-project/
     └── requirements.txt
 
 ```
-## Each microservice:
+## 🗂️Each Microservice:
 ```
 - ✅ Is a small standalone Python (Flask) application.
 - ✅ Has its own Dockerfile to containerize it.
@@ -82,7 +82,7 @@ To build and run containers **from inside another container**, we used **Docker-
 This enabled the container to **run Docker commands as if on the host system**.
 
 
-## ⚙️ What You Can Do with This Setup:
+## ⚙️ What we can do with this setup:
 ```
 
 - ✅ Learn and practice Flask microservices architecture
@@ -103,7 +103,7 @@ Extend each service to have its own:
 - ✅ Clean CI/CD-ready setup.
 
 ```
-## 🚀 Future Enhancements You Can Try:
+## 🚀 Future Enhancements
 ```
 
 Add API endpoints to perform real operations like add users/products/orders.
