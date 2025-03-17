@@ -87,11 +87,13 @@ Add frontend UI to consume all APIs.
 Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
 Deploy this architecture to the cloud (AWS, GCP, Azure).
 
+```
 ## ⚙️ Setting Up Docker-in-Docker (DinD)
+```
 
 To build and run containers **from inside another container**, we used **Docker-in-Docker** (DinD) setup with `--privileged` mode and Docker socket mounting.
-
-### ✅ Steps followed:
+```
+##✅ Steps followed:
 
 1. **Created a Docker image with Docker + Git preinstalled:**
    ```dockerfile
@@ -209,24 +211,25 @@ git push -u origin main --force
 - ✅ Clean CI/CD-ready setup.
 
 ---
+## 🚀 Future Enhancements You Can Try:
+```
 
-## 📌 Future Enhancements
-
-- Add API Gateway / NGINX reverse proxy
-- Connect services via internal Docker network
-- Add database containers (MySQL/Postgres)
-- Implement service discovery and monitoring
+Add API endpoints to perform real operations like add users/products/orders.
+Connect microservices using REST calls between services.
+Add databases per service (e.g., user-db, product-db).
+Add frontend UI to consume all APIs.
+Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
+Deploy this architecture to the cloud (AWS, GCP, Azure).
 
 ---
-
 ## 🙌 Author
-
+```
 **Akhil Thyadi**  
 GitHub: [@akhil27051999](https://github.com/akhil27051999)
 
 ---
 
 ## 📜 License
-
+```
 This project is open source and available under the [MIT License](LICENSE).
 
