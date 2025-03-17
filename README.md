@@ -33,6 +33,59 @@ microservices-project/
 ```
 
 ---
+## This project is building three independent Flask-based microservices:
+```
+
+✅ User Service → Runs on port 5001
+✅ Product Service → Runs on port 5002
+✅ Order Service → Runs on port 5003
+
+```
+Each microservice:
+```
+
+Is a small standalone Python (Flask) application.
+Has its own Dockerfile to containerize it.
+Has its own requirements.txt to install dependencies.
+Returns a simple response like "User Service is running!" when accessed via a browser or API call.
+
+```
+All services are managed and run together using a docker-compose.yml, which:
+```
+Builds images from the respective folders.
+Starts all services in one go.
+Exposes each service on its respective port.
+
+```
+🏗 Architecture Overview (Microservices Pattern)
+```
+
+        ┌────────────┐       ┌────────────────┐
+        │  Browser / │─────▶│  User Service   │ (http://localhost:5001)
+        │  API Tool  │─────▶│ Product Service │ (http://localhost:5002)
+                          ▶│  Order Service   │ (http://localhost:5003)
+        └────────────┘       └────────────────┘
+```
+## ⚙️ What You Can Do with This Setup:
+```
+Learn and practice Flask microservices architecture
+Learn Docker & Docker Compose in a real-world setup
+Understand service isolation, containerization, and port mapping
+Extend each service to have its own:
+Database (MySQL, PostgreSQL, MongoDB, etc.)
+API endpoints (CRUD operations)
+Internal communication (via REST APIs or gRPC)
+
+```
+## 🚀 Future Enhancements You Can Try:
+```
+
+Add API endpoints to perform real operations like add users/products/orders.
+Connect microservices using REST calls between services.
+Add databases per service (e.g., user-db, product-db).
+Add frontend UI to consume all APIs.
+Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
+Deploy this architecture to the cloud (AWS, GCP, Azure).
 
 ## ⚙️ Setting Up Docker-in-Docker (DinD)
 
