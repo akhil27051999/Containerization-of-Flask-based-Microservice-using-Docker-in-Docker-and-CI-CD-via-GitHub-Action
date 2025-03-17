@@ -69,8 +69,6 @@ Internal communication (via REST APIs or gRPC)
 
 To build and run containers **from inside another container**, we used **Docker-in-Docker** (DinD) setup with `--privileged` mode and Docker socket mounting.
 
-```
-```
 1. **Created a Docker image with Docker + Git preinstalled:**
    ```dockerfile
    FROM docker:dind
