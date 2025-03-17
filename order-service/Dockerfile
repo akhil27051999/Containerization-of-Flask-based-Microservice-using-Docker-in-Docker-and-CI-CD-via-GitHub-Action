@@ -10,6 +10,7 @@ COPY requirements.txt .
 # '--no-chache-dir' avoids storing downloaded packages in cache, reducing image size
 # pip stands for "Pip Installs Packages", and it is the default package manager for Python.
 # It’s a text file that contains a list of packages your Python project needs. Example: flask==2.1.1; requests>=2.25.1; numpy
+# Using pip install -r requirements.txt, you install all the dependencies in one go.
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy the main application file (app.py) from the host system into the container's /app directory
 COPY app.py .
