@@ -28,14 +28,6 @@ microservices-project/
     ├── app.py
     ├── Dockerfile
     └── requirements.txt
-```
-
----
-## This project is building three independent Flask-based microservices:
-```
-✅ User Service → Runs on port 5001
-✅ Product Service → Runs on port 5002
-✅ Order Service → Runs on port 5003
 
 ```
 ## Each microservice:
