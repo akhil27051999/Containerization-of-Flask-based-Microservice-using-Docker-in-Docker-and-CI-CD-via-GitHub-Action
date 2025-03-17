@@ -38,7 +38,7 @@ microservices-project/
 - ✅ Returns a simple response like "User Service is running!" when accessed via a browser or API call.
 
 ```
-## All services are managed and run together using a docker-compose.yml, which:
+All services are managed and run together using a docker-compose.yml, which:
 ```
 Builds images from the respective folders.
 Starts all services in one go.
