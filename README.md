@@ -40,9 +40,9 @@ microservices-project/
 ```
 All services are managed and run together using a docker-compose.yml, which:
 ```
-Builds images from the respective folders.
-Starts all services in one go.
-Exposes each service on its respective port.
+- ✅ Builds images from the respective folders.
+- ✅ Starts all services in one go.
+- ✅ Exposes each service on its respective port.
 
 ```
 ## 🏗 Architecture Overview (Microservices Pattern)
