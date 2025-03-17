@@ -106,12 +106,12 @@ Extend each service to have its own:
 ## 🚀 Future Enhancements
 ```
 
-Add API endpoints to perform real operations like add users/products/orders.
-Connect microservices using REST calls between services.
-Add databases per service (e.g., user-db, product-db).
-Add frontend UI to consume all APIs.
-Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
-Deploy this architecture to the cloud (AWS, GCP, Azure).
+- ✅ Add API endpoints to perform real operations like add users/products/orders.
+- ✅ Connect microservices using REST calls between services.
+- ✅ Add databases per service (e.g., user-db, product-db).
+- ✅ Add frontend UI to consume all APIs.
+- ✅ Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
+- ✅ Deploy this architecture to the cloud (AWS, GCP, Azure).
 
 ```
 ## 🙌 Author
