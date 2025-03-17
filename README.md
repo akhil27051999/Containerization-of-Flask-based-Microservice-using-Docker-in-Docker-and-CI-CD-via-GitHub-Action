@@ -54,17 +54,6 @@ Exposes each service on its respective port.
         |            |     ▶│  Order Service  │ (http://localhost:5003)
         └────────────┘       └────────────────┘
 ```
-## ⚙️ What You Can Do with This Setup:
-```
-Learn and practice Flask microservices architecture
-Learn Docker & Docker Compose in a real-world setup
-Understand service isolation, containerization, and port mapping
-Extend each service to have its own:
-Database (MySQL, PostgreSQL, MongoDB, etc.)
-API endpoints (CRUD operations)
-Internal communication (via REST APIs or gRPC)
-
-```
 ## ⚙️ Setting Up Docker-in-Docker (DinD)
 
 To build and run containers **from inside another container**, we used **Docker-in-Docker** (DinD) setup with `--privileged` mode and Docker socket mounting.
@@ -92,7 +81,19 @@ To build and run containers **from inside another container**, we used **Docker-
 
 This enabled the container to **run Docker commands as if on the host system**.
 
----
+``
+## ⚙️ What You Can Do with This Setup:
+```
+
+- ✅ Learn and practice Flask microservices architecture
+- ✅ Learn Docker & Docker Compose in a real-world setup
+- ✅ Understand service isolation, containerization, and port mapping
+Extend each service to have its own:
+- ✅ Database (MySQL, PostgreSQL, MongoDB, etc.)
+- ✅ API endpoints (CRUD operations)
+- ✅ Internal communication (via REST APIs or gRPC)
+
+```
 ## 📌 Highlights
 ```
 
