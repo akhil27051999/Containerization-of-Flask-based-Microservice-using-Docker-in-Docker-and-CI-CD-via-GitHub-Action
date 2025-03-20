@@ -1,9 +1,6 @@
-# Define the version of Docker Compose syntax
 version: '3.8'
-
-# Define the services (containers) that will be managed
 services:
-  # Service 1: User Service
+  # ---------------Service 1: User Service---------------
   user-service:
     # Build the Docker image from the Dockerfile located in ./user-service directory
     build: ./user-service
@@ -11,7 +8,7 @@ services:
     ports:
       - "5001:5001"
 
-  # Service 2: Product Service
+  # ---------------Service 1: Product Service---------------
   product-service:
     # Build the Docker image from the Dockerfile located in ./product-service directory
     build: ./product-service
@@ -19,7 +16,7 @@ services:
     ports:
       - "5002:5002"
 
-  # Service 3: Order Service
+  # ---------------Service 3: Order Service---------------
   order-service:
     # Build the Docker image from the Dockerfile located in ./order-service directory
     build: ./order-service
