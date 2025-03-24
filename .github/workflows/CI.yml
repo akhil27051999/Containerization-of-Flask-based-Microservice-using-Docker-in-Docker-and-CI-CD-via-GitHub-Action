@@ -1,0 +1,50 @@
+name: CI - Build, Test & Validate Microservices
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 🐳 Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: 📦 Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
+
+      - name: 🛠️ Build Docker images (Multi-stage builds)
+        run: |
+          docker build -t user-service ./user-service
+          docker build -t order-service ./order-service
+          docker build -t product-service ./product-service
+
+      - name: 🚀 Start services using docker-compose
+        run: |
+          docker-compose up -d
+          sleep 10  # wait for services to start
+
+      - name: ✅ Verify services using curl
+        run: |
+          echo "Testing user-service..."
+          curl --fail http://localhost:8001 || exit 1
+          echo "Testing order-service..."
+          curl --fail http://localhost:8002 || exit 1
+          echo "Testing product-service..."
+          curl --fail http://localhost:8003 || exit 1
+
+      - name: 🧪 (Optional) Run pytest or unit tests (if present)
+        run: |
+          echo "Add Python test script in each service if needed"
