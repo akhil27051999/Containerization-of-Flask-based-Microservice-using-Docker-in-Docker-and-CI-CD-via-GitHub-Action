@@ -39,11 +39,11 @@ jobs:
       - name: ✅ Verify services using curl
         run: |
           echo "Testing user-service..."
-          curl --fail http://localhost:8001 || exit 1
+          curl --fail http://localhost:5001 || exit 1
           echo "Testing order-service..."
-          curl --fail http://localhost:8002 || exit 1
+          curl --fail http://localhost:5002 || exit 1
           echo "Testing product-service..."
-          curl --fail http://localhost:8003 || exit 1
+          curl --fail http://localhost:5003 || exit 1
 
       - name: 🧪 (Optional) Run pytest or unit tests (if present)
         run: |
