@@ -33,7 +33,7 @@ jobs:
 
       - name: 🚀 Start services using docker-compose
         run: |
-          docker-compose up -d
+          docker compose up -d
           sleep 10  # wait for services to start
 
       - name: ✅ Verify services using curl
@@ -45,6 +45,3 @@ jobs:
           echo "Testing product-service..."
           curl --fail http://localhost:5003 || exit 1
 
-      - name: 🧪 (Optional) Run pytest or unit tests (if present)
-        run: |
-          echo "Add Python test script in each service if needed"
