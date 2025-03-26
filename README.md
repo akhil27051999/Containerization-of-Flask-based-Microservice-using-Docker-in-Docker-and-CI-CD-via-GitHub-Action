@@ -31,17 +31,17 @@ microservices-project/
 ```
 ## 🗂️Each Microservice:
 ```
-- ✅ Is a small standalone Python (Flask) application.
-- ✅ Has its own Dockerfile to containerize it.
-- ✅ Has its own requirements.txt to install dependencies.
-- ✅ Returns a simple response like "User Service is running!" when accessed via a browser or API call.
+1. Is a small standalone Python (Flask) application.
+2. Has its own Dockerfile to containerize it.
+3. Has its own requirements.txt to install dependencies.
+4. Returns a simple response like "User Service is running!" when accessed via a browser or API call.
 
 ```
 All services are managed and run together using a docker-compose.yml, which:
 ```
-- ✅ Builds images from the respective folders.
-- ✅ Starts all services in one go.
-- ✅ Exposes each service on its respective port.
+1. Builds images from the respective folders.
+2. Starts all services in one go.
+3. Exposes each service on its respective port.
 
 ```
 ## 🏗 Architecture Overview (Microservices Pattern)
