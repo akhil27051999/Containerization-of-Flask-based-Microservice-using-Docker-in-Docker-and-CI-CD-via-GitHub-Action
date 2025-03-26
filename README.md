@@ -1,4 +1,4 @@
-## 🚀 Flask based Microservices Architecture using Docker in Docker
+# 🚀 Flask based Microservices Architecture using Docker in Docker
 
 This project demonstrates a simple microservices architecture using **Docker Compose**. It includes three services:
 - 🍭 `product-service`
