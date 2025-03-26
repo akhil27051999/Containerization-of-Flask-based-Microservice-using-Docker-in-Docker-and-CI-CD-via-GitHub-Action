@@ -7,7 +7,7 @@ This project demonstrates a simple microservices architecture using **Docker Com
 
 Each service runs as an isolated container, built from lightweight Python (Flask) images.
 
----
+
 ## 📆 Project Structure
 ```
 microservices-project/
@@ -28,7 +28,6 @@ microservices-project/
     ├── app.py
     ├── Dockerfile
     └── requirements.txt
-
 ```
 ## 🗂️Each Microservice:
 ```
@@ -55,9 +54,9 @@ All services are managed and run together using a docker-compose.yml, which:
         └────────────┘       └────────────────┘
 ```
 ## ⚙️ Setting Up Docker-in-Docker (DinD)
-
+```
 To build and run containers **from inside another container**, we used **Docker-in-Docker** (DinD) setup with `--privileged` mode and Docker socket mounting.
-
+```
 1. **Created a Docker image with Docker + Git preinstalled:**
    ```dockerfile
    FROM docker:dind
@@ -78,17 +77,16 @@ To build and run containers **from inside another container**, we used **Docker-
      --name docker-dev-container \
      ubuntu-dind-dev
    ```
-
+```
 This enabled the container to **run Docker commands as if on the host system**.
-
+```
 
 ## ⚙️ What we can do with this setup:
 ```
 
 - ✅ Learn and practice Flask microservices architecture
 - ✅ Learn Docker & Docker Compose in a real-world setup
-- ✅ Understand service isolation, containerization, and port mapping
-Extend each service to have its own:
+- ✅ Understand service isolation, containerization, and port mapping Extend each service to have its own:
 - ✅ Database (MySQL, PostgreSQL, MongoDB, etc.)
 - ✅ API endpoints (CRUD operations)
 - ✅ Internal communication (via REST APIs or gRPC)
