@@ -35,12 +35,7 @@ microservices-project/
 - Has its own Dockerfile to containerize it.
 - Has its own requirements.txt to install dependencies.
 - Returns a simple response like "User Service is running!" when accessed via a browser or API call.
-
-🧮 All services are managed and run together using a docker-compose.yml, which:
-
-- Builds images from the respective folders.
-- Starts all services in one go.
-- Exposes each service on its respective port.
+- All services are managed and run together using a docker-compose.yml, which will build, starts and expose each service on it's respective ports.
 
 
 ## 🎯Architecture Overview (Microservices Pattern)
