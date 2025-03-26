@@ -30,20 +30,19 @@ microservices-project/
     └── requirements.txt
 ```
 ## 🗂️Each Microservice:
-```
-1. Is a small standalone Python (Flask) application.
-2. Has its own Dockerfile to containerize it.
-3. Has its own requirements.txt to install dependencies.
-4. Returns a simple response like "User Service is running!" when accessed via a browser or API call.
 
-```
+- Is a small standalone Python (Flask) application.
+- Has its own Dockerfile to containerize it.
+- Has its own requirements.txt to install dependencies.
+- Returns a simple response like "User Service is running!" when accessed via a browser or API call.
+
 All services are managed and run together using a docker-compose.yml, which:
-```
-1. Builds images from the respective folders.
-2. Starts all services in one go.
-3. Exposes each service on its respective port.
 
-```
+- Builds images from the respective folders.
+- Starts all services in one go.
+- Exposes each service on its respective port.
+
+
 ## 🎯Architecture Overview (Microservices Pattern)
 ```
 
@@ -77,48 +76,40 @@ To build and run containers **from inside another container**, we used **Docker-
      --name docker-dev-container \
      ubuntu-dind-dev
    ```
-```
+
 This enabled the container to **run Docker commands as if on the host system**.
-```
 
 ## 🧩 What we can do with this setup:
-```
 
-1. Learn and practice Flask microservices architecture
-2. Learn Docker & Docker Compose in a real-world setup
-3. Understand service isolation, containerization, and port mapping Extend each service to have its own:
-4. Database (MySQL, PostgreSQL, MongoDB, etc.)
-5. API endpoints (CRUD operations)
-6. Internal communication (via REST APIs or gRPC)
+- Learn and practice Flask microservices architecture
+- Learn Docker & Docker Compose in a real-world setup
+- Understand service isolation, containerization, and port mapping Extend each service to have its own:
+- Database (MySQL, PostgreSQL, MongoDB, etc.)
+- API endpoints (CRUD operations)
+- Internal communication (via REST APIs or gRPC)
 
-```
 ## 📌 Highlights
-```
 
-1. Docker-in-Docker for flexible development.
-2. Modular microservices structure.
-3. Easy-to-scale containerized architecture.
-4. Clean CI/CD-ready setup.
+- Docker-in-Docker for flexible development.
+- Modular microservices structure.
+- Easy-to-scale containerized architecture.
+- Clean CI/CD-ready setup.
 
-```
 ## 🔮 Future Enhancements
-```
 
-1. Add API endpoints to perform real operations like add users/products/orders.
-2. Connect microservices using REST calls between services.
-3. Add databases per service (e.g., user-db, product-db).
-4. Add frontend UI to consume all APIs.
-5. Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
-6. Deploy this architecture to the cloud (AWS, GCP, Azure).
+- Add API endpoints to perform real operations like add users/products/orders.
+- Connect microservices using REST calls between services.
+- Add databases per service (e.g., user-db, product-db).
+- Add frontend UI to consume all APIs.
+- Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
+- Deploy this architecture to the cloud (AWS, GCP, Azure).
 
-```
 ## ✍️ Author
-```
-Akhil Thyadi
-GitHub: [@akhil27051999](https://github.com/akhil27051999)
 
-```
+- Akhil Thyadi
+- GitHub: [@akhil27051999](https://github.com/akhil27051999)
+
 ## 📜 License
-```
+
 This project is open source and available under the [MIT License](LICENSE).
 
