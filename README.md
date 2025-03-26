@@ -81,38 +81,38 @@ To build and run containers **from inside another container**, we used **Docker-
 This enabled the container to **run Docker commands as if on the host system**.
 ```
 
-## ⚙️ What we can do with this setup:
+## 🗃️ What we can do with this setup:
 ```
 
-- ✅ Learn and practice Flask microservices architecture
-- ✅ Learn Docker & Docker Compose in a real-world setup
-- ✅ Understand service isolation, containerization, and port mapping Extend each service to have its own:
-- ✅ Database (MySQL, PostgreSQL, MongoDB, etc.)
-- ✅ API endpoints (CRUD operations)
-- ✅ Internal communication (via REST APIs or gRPC)
+1. Learn and practice Flask microservices architecture
+2. Learn Docker & Docker Compose in a real-world setup
+3. Understand service isolation, containerization, and port mapping Extend each service to have its own:
+4. Database (MySQL, PostgreSQL, MongoDB, etc.)
+5. API endpoints (CRUD operations)
+6. Internal communication (via REST APIs or gRPC)
 
 ```
 ## 📌 Highlights
 ```
 
-- ✅ Docker-in-Docker for flexible development.
-- ✅ Modular microservices structure.
-- ✅ Easy-to-scale containerized architecture.
-- ✅ Clean CI/CD-ready setup.
+1. Docker-in-Docker for flexible development.
+2. Modular microservices structure.
+3. Easy-to-scale containerized architecture.
+4. Clean CI/CD-ready setup.
 
 ```
-## 🚀 Future Enhancements
+## 🔮 Future Enhancements
 ```
 
-- ✅ Add API endpoints to perform real operations like add users/products/orders.
-- ✅ Connect microservices using REST calls between services.
-- ✅ Add databases per service (e.g., user-db, product-db).
-- ✅ Add frontend UI to consume all APIs.
-- ✅ Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
-- ✅ Deploy this architecture to the cloud (AWS, GCP, Azure).
+1. Add API endpoints to perform real operations like add users/products/orders.
+2. Connect microservices using REST calls between services.
+3. Add databases per service (e.g., user-db, product-db).
+4. Add frontend UI to consume all APIs.
+5. Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
+6. Deploy this architecture to the cloud (AWS, GCP, Azure).
 
 ```
-## 🙌 Author
+## ✍️ Author
 ```
 **Akhil Thyadi**  
 GitHub: [@akhil27051999](https://github.com/akhil27051999)
