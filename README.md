@@ -114,7 +114,7 @@ This enabled the container to **run Docker commands as if on the host system**.
 ```
 ## ✍️ Author
 ```
-**Akhil Thyadi**  
+Akhil Thyadi
 GitHub: [@akhil27051999](https://github.com/akhil27051999)
 
 ```
