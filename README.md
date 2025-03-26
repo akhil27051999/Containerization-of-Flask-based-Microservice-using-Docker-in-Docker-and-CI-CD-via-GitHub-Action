@@ -8,7 +8,7 @@ This project demonstrates a simple microservices architecture using **Docker Com
 Each service runs as an isolated container, built from lightweight Python (Flask) images.
 
 
-## 📆 Project Structure
+## 🏗️ Project Structure
 ```
 microservices-project/
 │
@@ -44,7 +44,7 @@ All services are managed and run together using a docker-compose.yml, which:
 3. Exposes each service on its respective port.
 
 ```
-## 🏗 Architecture Overview (Microservices Pattern)
+## 🎯Architecture Overview (Microservices Pattern)
 ```
 
         ┌────────────┐       ┌────────────────┐
@@ -81,7 +81,7 @@ To build and run containers **from inside another container**, we used **Docker-
 This enabled the container to **run Docker commands as if on the host system**.
 ```
 
-## 🗃️ What we can do with this setup:
+## 🧩 What we can do with this setup:
 ```
 
 1. Learn and practice Flask microservices architecture
