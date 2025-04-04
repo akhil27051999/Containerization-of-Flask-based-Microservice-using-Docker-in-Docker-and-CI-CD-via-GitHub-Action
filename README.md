@@ -1,4 +1,4 @@
-# 🚀 Flask based Microservices Architecture using Docker in Docker
+# 🚀 Containerization of Flask based Microservice using Docker-in-Docker (DinD) and CI/CD via GitHub Actions
 
 This project demonstrates a simple microservices architecture using **Docker Compose**. It includes three services:
 - 🍭 `product-service`
