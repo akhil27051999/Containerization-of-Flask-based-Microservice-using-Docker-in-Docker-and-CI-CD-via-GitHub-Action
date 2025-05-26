@@ -90,15 +90,6 @@ This enabled the container to **run Docker commands as if on the host system**.
 - Easy-to-scale containerized architecture.
 - Clean CI/CD-ready setup.
 
-## 🔮 Future Enhancements
-
-- Add API endpoints to perform real operations like add users/products/orders.
-- Connect microservices using REST calls between services.
-- Add databases per service (e.g., user-db, product-db).
-- Add frontend UI to consume all APIs.
-- Implement service discovery, authentication, or message queues (e.g., RabbitMQ/Kafka).
-- Deploy this architecture to the cloud (AWS, GCP, Azure).
-
 ## ✍️ Author
 
 - Akhil Thyadi
